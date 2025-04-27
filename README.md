@@ -1,1 +1,2 @@
 ![alt text](https://github.com/bhimlex13/Match-Up-Game-Valorant-Theme/blob/master/ss1.png?raw=true)
+![Game Screenshot](https://raw.githubusercontent.com/bhimlex13/Match-Up-Game-Valorant-Theme/main/app/src/main/res/drawable/ss1.jpeg)
