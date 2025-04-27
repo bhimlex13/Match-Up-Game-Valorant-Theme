@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2_game"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:background="@drawable/topbar_bg"
+        android:elevation="8dp"
+        android:layout_margin="12dp"
+        android:layout_marginBottom="0dp"
+        android:clipToPadding="false">
+
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home"
+            android:background="@null"
+            android:tint="#FFFFFF"
+            android:contentDescription="Home" />
+
+        <ImageButton
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_refresh"
+            android:background="@null"
+            android:tint="#FFFFFF"
+            android:contentDescription="Reset" />
+
+        <ImageButton
+            android:id="@+id/btnMute"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_volume_on"
+            android:background="@null"
+            android:tint="#FFFFFF"
+            android:contentDescription="Mute" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/infoBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/txtMoveCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moves: 0"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginEnd="32dp" />
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: 0s"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/gridView"
+        android:numColumns="3"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:layout_below="@id/infoBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchMode="columnWidth"
+        android:gravity="center" />
+</RelativeLayout>

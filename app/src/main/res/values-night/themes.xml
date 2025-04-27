@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base dark Valorant-inspired theme -->
+    <style name="Base.Theme.MatchUpGame" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:colorBackground">#0D0D0D</item>
+        <item name="colorSurface">#121212</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+
+        <!-- Neon accent -->
+        <item name="colorPrimary">#00FFFF</item>
+        <item name="colorPrimaryVariant">#00E5FF</item>
+        <item name="colorOnPrimary">#000000</item>
+
+        <item name="colorSecondary">#1E1E1E</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <!-- Text -->
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:windowBackground">#0D0D0D</item>
+
+        <!-- Remove action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MatchUpGame" parent="Base.Theme.MatchUpGame"/>
+</resources>
